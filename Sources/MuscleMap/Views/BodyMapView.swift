@@ -4,9 +4,9 @@ struct BodyMapView: View {
     @Environment(\.managedObjectContext) private var context
     @StateObject private var viewModel: BodyViewModel
     @State private var showDetail = false
+    @State private var viewDirection: BodyViewDirection = .front
 
     init() {
-        // StateObjectのinitはcontextが必要なのでonAppearで設定
         _viewModel = StateObject(wrappedValue: BodyViewModel(context: PersistenceController.shared.container.viewContext))
     }
 
@@ -15,6 +15,7 @@ struct BodyMapView: View {
             ZStack(alignment: .bottom) {
                 BodySceneView(
                     selectedMuscleId: $viewModel.selectedMuscleId,
+                    viewDirection: $viewDirection,
                     lastTrainedByMuscle: viewModel.lastTrainedByMuscle
                 ) { muscleId in
                     viewModel.selectedMuscleId = muscleId
@@ -22,7 +23,11 @@ struct BodyMapView: View {
                 }
                 .ignoresSafeArea(edges: .top)
 
-                legend
+                VStack(spacing: 12) {
+                    directionPicker
+                    legend
+                }
+                .padding(.bottom, 16)
             }
             .navigationTitle("MuscleMap")
             .navigationBarTitleDisplayMode(.inline)
@@ -32,6 +37,16 @@ struct BodyMapView: View {
                 }
             }
         }
+    }
+
+    private var directionPicker: some View {
+        Picker("", selection: $viewDirection) {
+            Text("前面").tag(BodyViewDirection.front)
+            Text("背面").tag(BodyViewDirection.back)
+        }
+        .pickerStyle(.segmented)
+        .frame(width: 160)
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 8))
     }
 
     private var legend: some View {

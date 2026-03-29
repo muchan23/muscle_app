@@ -1,8 +1,13 @@
 import SwiftUI
 import SceneKit
 
+enum BodyViewDirection {
+    case front, back
+}
+
 struct BodySceneView: UIViewRepresentable {
     @Binding var selectedMuscleId: String?
+    @Binding var viewDirection: BodyViewDirection
     var lastTrainedByMuscle: [String: Date]
     var onTap: (String) -> Void
 
@@ -22,6 +27,17 @@ struct BodySceneView: UIViewRepresentable {
     func updateUIView(_ view: SCNView, context: Context) {
         guard let scene = view.scene else { return }
         updateColors(in: scene)
+        updateCamera(in: scene, view: view)
+    }
+
+    private func updateCamera(in scene: SCNScene, view: SCNView) {
+        guard let pov = view.pointOfView else { return }
+        let isFront = viewDirection == .front
+        SCNTransaction.begin()
+        SCNTransaction.animationDuration = 0.4
+        pov.position = SCNVector3(0, 0.5, isFront ? 4 : -4)
+        pov.eulerAngles = SCNVector3(0, isFront ? 0 : Float.pi, 0)
+        SCNTransaction.commit()
     }
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
@@ -82,6 +98,7 @@ enum BodySceneBuilder {
 
         // カメラ
         let cam = SCNNode()
+        cam.name = "mainCamera"
         cam.camera = SCNCamera()
         cam.position = SCNVector3(0, 0.5, 4)
         scene.rootNode.addChildNode(cam)
@@ -110,10 +127,14 @@ enum BodySceneBuilder {
 
         // 前面トルソ
         nodes += [
-            node(name: "chest",  geo: SCNBox(width: 0.68, height: 0.40, length: 0.18, chamferRadius: 0.03),
-                 pos: (0, 1.22, 0.02), color: .systemGray4),
-            node(name: "abs",    geo: SCNBox(width: 0.58, height: 0.38, length: 0.15, chamferRadius: 0.03),
-                 pos: (0, 0.82, 0.02), color: .systemGray4),
+            node(name: "chest",      geo: SCNBox(width: 0.68, height: 0.40, length: 0.18, chamferRadius: 0.03),
+                 pos: (0, 1.22, 0.02),    color: .systemGray4),
+            node(name: "abs",        geo: SCNBox(width: 0.44, height: 0.38, length: 0.15, chamferRadius: 0.03),
+                 pos: (0, 0.82, 0.02),    color: .systemGray4),
+            node(name: "obliques_l", geo: SCNBox(width: 0.13, height: 0.38, length: 0.13, chamferRadius: 0.02),
+                 pos: (-0.30, 0.82, 0.01), color: .systemGray4),
+            node(name: "obliques_r", geo: SCNBox(width: 0.13, height: 0.38, length: 0.13, chamferRadius: 0.02),
+                 pos: (0.30, 0.82, 0.01),  color: .systemGray4),
         ]
 
         // 後面トルソ
@@ -146,14 +167,18 @@ enum BodySceneBuilder {
 
         // 下半身
         nodes += [
-            node(name: "glutes_l",      geo: SCNSphere(radius: 0.13),                      pos: (-0.17, 0.53, -0.1),  color: .systemGray4),
-            node(name: "glutes_r",      geo: SCNSphere(radius: 0.13),                      pos: (0.17, 0.53, -0.1),   color: .systemGray4),
-            node(name: "quads_l",       geo: SCNCylinder(radius: 0.10, height: 0.52),      pos: (-0.19, 0.14, 0.05),  color: .systemGray4),
-            node(name: "quads_r",       geo: SCNCylinder(radius: 0.10, height: 0.52),      pos: (0.19, 0.14, 0.05),   color: .systemGray4),
-            node(name: "hamstrings_l",  geo: SCNCylinder(radius: 0.09, height: 0.50),      pos: (-0.19, 0.14, -0.06), color: .systemGray4),
-            node(name: "hamstrings_r",  geo: SCNCylinder(radius: 0.09, height: 0.50),      pos: (0.19, 0.14, -0.06),  color: .systemGray4),
-            node(name: "calves_l",      geo: SCNCylinder(radius: 0.07, height: 0.42),      pos: (-0.19, -0.35, 0),    color: .systemGray4),
-            node(name: "calves_r",      geo: SCNCylinder(radius: 0.07, height: 0.42),      pos: (0.19, -0.35, 0),     color: .systemGray4),
+            node(name: "glutes_l",     geo: SCNSphere(radius: 0.13),                       pos: (-0.17, 0.53, -0.1),   color: .systemGray4),
+            node(name: "glutes_r",     geo: SCNSphere(radius: 0.13),                       pos: (0.17, 0.53, -0.1),    color: .systemGray4),
+            node(name: "quads_l",      geo: SCNCylinder(radius: 0.085, height: 0.52),      pos: (-0.21, 0.14, 0.05),   color: .systemGray4),
+            node(name: "quads_r",      geo: SCNCylinder(radius: 0.085, height: 0.52),      pos: (0.21, 0.14, 0.05),    color: .systemGray4),
+            node(name: "adductors_l",  geo: SCNCylinder(radius: 0.065, height: 0.48),      pos: (-0.09, 0.14, 0.0),    color: .systemGray4),
+            node(name: "adductors_r",  geo: SCNCylinder(radius: 0.065, height: 0.48),      pos: (0.09, 0.14, 0.0),     color: .systemGray4),
+            node(name: "hamstrings_l", geo: SCNCylinder(radius: 0.085, height: 0.50),      pos: (-0.21, 0.14, -0.06),  color: .systemGray4),
+            node(name: "hamstrings_r", geo: SCNCylinder(radius: 0.085, height: 0.50),      pos: (0.21, 0.14, -0.06),   color: .systemGray4),
+            node(name: "calves_l",     geo: SCNCylinder(radius: 0.065, height: 0.42),      pos: (-0.21, -0.35, -0.02), color: .systemGray4),
+            node(name: "calves_r",     geo: SCNCylinder(radius: 0.065, height: 0.42),      pos: (0.21, -0.35, -0.02),  color: .systemGray4),
+            node(name: "tibialis_l",   geo: SCNCylinder(radius: 0.05, height: 0.38),       pos: (-0.21, -0.35, 0.05),  color: .systemGray4),
+            node(name: "tibialis_r",   geo: SCNCylinder(radius: 0.05, height: 0.38),       pos: (0.21, -0.35, 0.05),   color: .systemGray4),
         ]
 
         return nodes

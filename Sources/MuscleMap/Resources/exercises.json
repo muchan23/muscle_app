@@ -439,6 +439,150 @@
           "description": "ヒラメ筋を重点的に鍛える種目。"
         }
       ]
+    },
+    {
+      "id": "forearms",
+      "nameJa": "前腕",
+      "nameEn": "Forearms",
+      "description": "手首・指の動作に関わる筋肉群。握力やリストの強さに直結する。",
+      "exercises": [
+        {
+          "id": "wrist_curl",
+          "nameJa": "リストカール",
+          "nameEn": "Wrist Curl",
+          "difficulty": "beginner",
+          "equipment": ["ダンベル"],
+          "description": "前腕屈筋群を鍛えるアイソレーション種目。"
+        },
+        {
+          "id": "reverse_wrist_curl",
+          "nameJa": "リバースリストカール",
+          "nameEn": "Reverse Wrist Curl",
+          "difficulty": "beginner",
+          "equipment": ["ダンベル"],
+          "description": "前腕伸筋群を鍛える種目。テニス肘予防にも有効。"
+        },
+        {
+          "id": "farmer_carry",
+          "nameJa": "ファーマーズキャリー",
+          "nameEn": "Farmer's Carry",
+          "difficulty": "beginner",
+          "equipment": ["ダンベル"],
+          "description": "重いものを持って歩くだけで握力・前腕全体を鍛えられる実用的な種目。"
+        },
+        {
+          "id": "dead_hang",
+          "nameJa": "デッドハング",
+          "nameEn": "Dead Hang",
+          "difficulty": "beginner",
+          "equipment": ["懸垂バー"],
+          "description": "バーにぶら下がるだけで握力・前腕を鍛えられる。肩のストレッチ効果もあり。"
+        }
+      ]
+    },
+    {
+      "id": "obliques",
+      "nameJa": "腹斜筋",
+      "nameEn": "Obliques",
+      "description": "腹部の側面に位置する筋肉。体の回旋・側屈に関わり、くびれを作る筋肉。",
+      "exercises": [
+        {
+          "id": "russian_twist_oblique",
+          "nameJa": "ロシアンツイスト",
+          "nameEn": "Russian Twist",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "腹斜筋を重点的に鍛えるローテーション種目。重りを持つと強度が上がる。"
+        },
+        {
+          "id": "side_plank",
+          "nameJa": "サイドプランク",
+          "nameEn": "Side Plank",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "腹斜筋・腰方形筋を鍛えるアイソメトリック種目。"
+        },
+        {
+          "id": "cable_woodchop",
+          "nameJa": "ケーブルウッドチョップ",
+          "nameEn": "Cable Woodchop",
+          "difficulty": "intermediate",
+          "equipment": ["ケーブルマシン"],
+          "description": "斜め方向に引くことで腹斜筋に強い刺激を与える種目。"
+        },
+        {
+          "id": "bicycle_crunch",
+          "nameJa": "バイシクルクランチ",
+          "nameEn": "Bicycle Crunch",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "腹直筋と腹斜筋を同時に鍛えられる効率的な種目。"
+        }
+      ]
+    },
+    {
+      "id": "adductors",
+      "nameJa": "内転筋",
+      "nameEn": "Adductors",
+      "description": "太ももの内側の筋肉群。脚を閉じる動作・股関節の安定に関わる。怪我予防にも重要。",
+      "exercises": [
+        {
+          "id": "sumo_squat",
+          "nameJa": "スモウスクワット",
+          "nameEn": "Sumo Squat",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "足幅を広げたスクワット。内転筋と臀部を重点的に鍛える。"
+        },
+        {
+          "id": "adductor_machine",
+          "nameJa": "アダクターマシン",
+          "nameEn": "Adductor Machine",
+          "difficulty": "beginner",
+          "equipment": ["アダクターマシン"],
+          "description": "内転筋のアイソレーション種目。初心者でも安全に鍛えられる。"
+        },
+        {
+          "id": "copenhagen_plank",
+          "nameJa": "コペンハーゲンプランク",
+          "nameEn": "Copenhagen Plank",
+          "difficulty": "advanced",
+          "equipment": ["ベンチ"],
+          "description": "内転筋を強烈に鍛えるプランクのバリエーション。怪我予防効果が高い。"
+        }
+      ]
+    },
+    {
+      "id": "tibialis",
+      "nameJa": "前脛骨筋",
+      "nameEn": "Tibialis Anterior",
+      "description": "すねの前面にある筋肉。つま先を上げる動作に使われる。走る・歩くの基本動作を支える。",
+      "exercises": [
+        {
+          "id": "tibialis_raise",
+          "nameJa": "ティビアリスレイズ",
+          "nameEn": "Tibialis Raise",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "壁に背をつけてかかとを支点につま先を上げる。前脛骨筋の直接的な種目。"
+        },
+        {
+          "id": "toe_walk",
+          "nameJa": "ヒールウォーク",
+          "nameEn": "Heel Walk",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "かかとだけで歩くことで前脛骨筋を鍛える。シンスプリント予防に有効。"
+        },
+        {
+          "id": "band_dorsiflexion",
+          "nameJa": "バンド背屈",
+          "nameEn": "Band Dorsiflexion",
+          "difficulty": "beginner",
+          "equipment": ["レジスタンスバンド"],
+          "description": "バンドを使ってつま先を上げる動作に負荷をかける種目。"
+        }
+      ]
     }
   ]
 }
