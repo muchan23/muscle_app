@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B6BE6BC5D18B951194E06BC /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F98764EC9056F662262D7 /* LogView.swift */; };
+		1E659711641FD1BD8F5FB23C /* MuscleMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17F5667489B814C66837E21C /* MuscleMap.xcdatamodeld */; };
+		28AA40381E64AE5A89B0AA5E /* exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = 7942EE5097ECA60F3519A22B /* exercises.json */; };
+		325DBBF6873F5F338160C76B /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFC350079A9EE42415C01D /* PersistenceController.swift */; };
+		334E0A710D1A96922D8CA581 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CF907D91621619BC9FD304 /* CloudKit.framework */; };
+		459BB0A8BD6EC2C798669BD6 /* BodyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A84D8EBC17A2BEEF4A11767 /* BodyMapView.swift */; };
+		5EB3D48654FDCDFB4E28D9EC /* BodyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4F1A9868EDC31929F4892 /* BodyViewModel.swift */; };
+		74474609B78C58582D2D1AC3 /* ExerciseDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABB6D3B485ADA6693A2B398 /* ExerciseDatabase.swift */; };
+		7982E8F794AD5A98334B20FC /* BodySceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B334C8FD612D2D05A4D8882D /* BodySceneView.swift */; };
+		7B18875626CDBFA311CFE1C7 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99B0ED856544635630BCE /* SceneKit.framework */; };
+		98D8CFA1B1CD7D90C6E46661 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7CE0DBDB1B748C32BDE8B5 /* HomeView.swift */; };
+		A4EA53B2436183EB462CE2D5 /* MuscleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0076BF794692C37B1C004C /* MuscleDetailView.swift */; };
+		B711A3E069E6BDE29A215AB1 /* LogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AAA9ACD0602ABB2252236E /* LogViewModel.swift */; };
+		C1E3FBFC6550AA425E3B8FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69349771465939C4D210C998 /* Assets.xcassets */; };
+		F2D24713AB6AD7560EE5F776 /* MuscleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9827738898FDAAFD36BC0 /* MuscleGroup.swift */; };
+		F98BA2406BA88FC5D1615280 /* MuscleMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319021B1AFBCA2216D981E45 /* MuscleMapApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F0076BF794692C37B1C004C /* MuscleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleDetailView.swift; sourceTree = "<group>"; };
+		28CF907D91621619BC9FD304 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		30E99B0ED856544635630BCE /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		319021B1AFBCA2216D981E45 /* MuscleMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleMapApp.swift; sourceTree = "<group>"; };
+		42E895571E0BA26A49A45A33 /* MuscleMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuscleMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43AAA9ACD0602ABB2252236E /* LogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewModel.swift; sourceTree = "<group>"; };
+		474F98764EC9056F662262D7 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		54FB3ED630C87ED84E1A965A /* MuscleMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MuscleMap.xcdatamodel; sourceTree = "<group>"; };
+		5D7CE0DBDB1B748C32BDE8B5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5EC9827738898FDAAFD36BC0 /* MuscleGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroup.swift; sourceTree = "<group>"; };
+		69349771465939C4D210C998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7942EE5097ECA60F3519A22B /* exercises.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercises.json; sourceTree = "<group>"; };
+		7A84D8EBC17A2BEEF4A11767 /* BodyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMapView.swift; sourceTree = "<group>"; };
+		8CB4F1A9868EDC31929F4892 /* BodyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyViewModel.swift; sourceTree = "<group>"; };
+		B334C8FD612D2D05A4D8882D /* BodySceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySceneView.swift; sourceTree = "<group>"; };
+		B8FC4FCFEB96A94CA81D729A /* MuscleMap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MuscleMap.entitlements; sourceTree = "<group>"; };
+		EABB6D3B485ADA6693A2B398 /* ExerciseDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDatabase.swift; sourceTree = "<group>"; };
+		F122765DEBDFB65C4230BD7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FAFFC350079A9EE42415C01D /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDF84A22E72017BE65FDB05E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B18875626CDBFA311CFE1C7 /* SceneKit.framework in Frameworks */,
+				334E0A710D1A96922D8CA581 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D48B0835F5CFF93AFCAF3C8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				17F5667489B814C66837E21C /* MuscleMap.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2F58A21266E5F9488CB3B0B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42E895571E0BA26A49A45A33 /* MuscleMap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6298B100612E9B2C5D6216E6 /* MuscleMap */ = {
+			isa = PBXGroup;
+			children = (
+				FC6E470EB9D3BBF1018E22A5 /* App */,
+				0D48B0835F5CFF93AFCAF3C8 /* CoreData */,
+				BDD5EE65675A64A598EEEE8C /* Models */,
+				69A6663D7F093B6148AFBCB1 /* Resources */,
+				92C5F26BE14A9ACCED9896F3 /* Services */,
+				E4522EF1AD181B52082E609A /* ViewModels */,
+				65A1BF39AB12B5D91F45012E /* Views */,
+			);
+			name = MuscleMap;
+			path = Sources/MuscleMap;
+			sourceTree = "<group>";
+		};
+		65A1BF39AB12B5D91F45012E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A84D8EBC17A2BEEF4A11767 /* BodyMapView.swift */,
+				B334C8FD612D2D05A4D8882D /* BodySceneView.swift */,
+				5D7CE0DBDB1B748C32BDE8B5 /* HomeView.swift */,
+				474F98764EC9056F662262D7 /* LogView.swift */,
+				0F0076BF794692C37B1C004C /* MuscleDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69A6663D7F093B6148AFBCB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69349771465939C4D210C998 /* Assets.xcassets */,
+				7942EE5097ECA60F3519A22B /* exercises.json */,
+				F122765DEBDFB65C4230BD7D /* Info.plist */,
+				B8FC4FCFEB96A94CA81D729A /* MuscleMap.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7BCED44B4D1D6E755D83AD3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28CF907D91621619BC9FD304 /* CloudKit.framework */,
+				30E99B0ED856544635630BCE /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83E1FA2C0DFA18F990C05867 = {
+			isa = PBXGroup;
+			children = (
+				6298B100612E9B2C5D6216E6 /* MuscleMap */,
+				7BCED44B4D1D6E755D83AD3A /* Frameworks */,
+				2F58A21266E5F9488CB3B0B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92C5F26BE14A9ACCED9896F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EABB6D3B485ADA6693A2B398 /* ExerciseDatabase.swift */,
+				FAFFC350079A9EE42415C01D /* PersistenceController.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BDD5EE65675A64A598EEEE8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5EC9827738898FDAAFD36BC0 /* MuscleGroup.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E4522EF1AD181B52082E609A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8CB4F1A9868EDC31929F4892 /* BodyViewModel.swift */,
+				43AAA9ACD0602ABB2252236E /* LogViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FC6E470EB9D3BBF1018E22A5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				319021B1AFBCA2216D981E45 /* MuscleMapApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F177B865909BD68FBBBBE8A0 /* MuscleMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96807741AED628803A4DBC93 /* Build configuration list for PBXNativeTarget "MuscleMap" */;
+			buildPhases = (
+				4DC2FD184B138BE7B31B1EFE /* Sources */,
+				F933E7DFF371DA3A04AE3464 /* Resources */,
+				EDF84A22E72017BE65FDB05E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuscleMap;
+			packageProductDependencies = (
+			);
+			productName = MuscleMap;
+			productReference = 42E895571E0BA26A49A45A33 /* MuscleMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40DD13D39E6CE44FF2E8E223 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 37D242056B19C59F699E43FB /* Build configuration list for PBXProject "MuscleMap" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 83E1FA2C0DFA18F990C05867;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2F58A21266E5F9488CB3B0B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F177B865909BD68FBBBBE8A0 /* MuscleMap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F933E7DFF371DA3A04AE3464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E3FBFC6550AA425E3B8FB8 /* Assets.xcassets in Resources */,
+				28AA40381E64AE5A89B0AA5E /* exercises.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DC2FD184B138BE7B31B1EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459BB0A8BD6EC2C798669BD6 /* BodyMapView.swift in Sources */,
+				7982E8F794AD5A98334B20FC /* BodySceneView.swift in Sources */,
+				5EB3D48654FDCDFB4E28D9EC /* BodyViewModel.swift in Sources */,
+				74474609B78C58582D2D1AC3 /* ExerciseDatabase.swift in Sources */,
+				98D8CFA1B1CD7D90C6E46661 /* HomeView.swift in Sources */,
+				1B6BE6BC5D18B951194E06BC /* LogView.swift in Sources */,
+				B711A3E069E6BDE29A215AB1 /* LogViewModel.swift in Sources */,
+				A4EA53B2436183EB462CE2D5 /* MuscleDetailView.swift in Sources */,
+				F2D24713AB6AD7560EE5F776 /* MuscleGroup.swift in Sources */,
+				1E659711641FD1BD8F5FB23C /* MuscleMap.xcdatamodeld in Sources */,
+				F98BA2406BA88FC5D1615280 /* MuscleMapApp.swift in Sources */,
+				325DBBF6873F5F338160C76B /* PersistenceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2E3486513591B38A85E53952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B4089EEE01117B262ECE57A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/MuscleMap/Resources/MuscleMap.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = NF4MXC5UTH;
+				INFOPLIST_FILE = Sources/MuscleMap/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murakamitomoki.musclemap;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B99BC0B721C6B08C39D7C1D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/MuscleMap/Resources/MuscleMap.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = NF4MXC5UTH;
+				INFOPLIST_FILE = Sources/MuscleMap/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murakamitomoki.musclemap;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C21CC6BB9DE9E72E3EC6EC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37D242056B19C59F699E43FB /* Build configuration list for PBXProject "MuscleMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E3486513591B38A85E53952 /* Debug */,
+				C21CC6BB9DE9E72E3EC6EC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		96807741AED628803A4DBC93 /* Build configuration list for PBXNativeTarget "MuscleMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99BC0B721C6B08C39D7C1D5 /* Debug */,
+				7B4089EEE01117B262ECE57A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		17F5667489B814C66837E21C /* MuscleMap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54FB3ED630C87ED84E1A965A /* MuscleMap.xcdatamodel */,
+			);
+			currentVersion = 54FB3ED630C87ED84E1A965A /* MuscleMap.xcdatamodel */;
+			path = MuscleMap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 40DD13D39E6CE44FF2E8E223 /* Project object */;
+}

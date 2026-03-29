@@ -1,0 +1,444 @@
+{
+  "muscleGroups": [
+    {
+      "id": "chest",
+      "nameJa": "胸",
+      "nameEn": "Chest",
+      "description": "大胸筋を中心とした胸部の筋肉群。押す動作で主に使われる。",
+      "exercises": [
+        {
+          "id": "bench_press",
+          "nameJa": "ベンチプレス",
+          "nameEn": "Bench Press",
+          "difficulty": "intermediate",
+          "equipment": ["バーベル", "ベンチ"],
+          "description": "胸筋の王道種目。大胸筋全体を鍛えるコンパウンド種目。"
+        },
+        {
+          "id": "incline_press",
+          "nameJa": "インクラインダンベルプレス",
+          "nameEn": "Incline Dumbbell Press",
+          "difficulty": "intermediate",
+          "equipment": ["ダンベル", "インクラインベンチ"],
+          "description": "上部大胸筋を重点的に鍛える種目。"
+        },
+        {
+          "id": "cable_fly",
+          "nameJa": "ケーブルフライ",
+          "nameEn": "Cable Fly",
+          "difficulty": "beginner",
+          "equipment": ["ケーブルマシン"],
+          "description": "大胸筋の収縮を意識しやすいアイソレーション種目。"
+        },
+        {
+          "id": "pushup",
+          "nameJa": "プッシュアップ",
+          "nameEn": "Push-Up",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "自重で行う基本の胸筋トレーニング。"
+        },
+        {
+          "id": "dips_chest",
+          "nameJa": "ディップス（胸）",
+          "nameEn": "Dips (Chest Focus)",
+          "difficulty": "intermediate",
+          "equipment": ["ディップスバー"],
+          "description": "前傾姿勢で行い、下部大胸筋を重点的に鍛える。"
+        }
+      ]
+    },
+    {
+      "id": "back",
+      "nameJa": "背中",
+      "nameEn": "Back",
+      "description": "脊柱起立筋・菱形筋などの脊柱周辺の筋肉群。姿勢維持に重要。",
+      "exercises": [
+        {
+          "id": "deadlift",
+          "nameJa": "デッドリフト",
+          "nameEn": "Deadlift",
+          "difficulty": "advanced",
+          "equipment": ["バーベル"],
+          "description": "背中全体と下半身を鍛える最強のコンパウンド種目。"
+        },
+        {
+          "id": "barbell_row",
+          "nameJa": "バーベルロウ",
+          "nameEn": "Barbell Row",
+          "difficulty": "intermediate",
+          "equipment": ["バーベル"],
+          "description": "背中の厚みを作るコンパウンド種目。"
+        },
+        {
+          "id": "seated_row",
+          "nameJa": "シーテッドケーブルロウ",
+          "nameEn": "Seated Cable Row",
+          "difficulty": "beginner",
+          "equipment": ["ケーブルマシン"],
+          "description": "背中の中央部を集中して鍛えるケーブル種目。"
+        }
+      ]
+    },
+    {
+      "id": "lats",
+      "nameJa": "広背筋",
+      "nameEn": "Lats",
+      "description": "背中の幅を作る大きな筋肉。引く動作で主に使われる。",
+      "exercises": [
+        {
+          "id": "pullup",
+          "nameJa": "懸垂（プルアップ）",
+          "nameEn": "Pull-Up",
+          "difficulty": "intermediate",
+          "equipment": ["懸垂バー"],
+          "description": "広背筋を鍛える最も効果的な自重種目。"
+        },
+        {
+          "id": "lat_pulldown",
+          "nameJa": "ラットプルダウン",
+          "nameEn": "Lat Pulldown",
+          "difficulty": "beginner",
+          "equipment": ["ケーブルマシン"],
+          "description": "懸垂が難しい場合の代替種目。広背筋に効果的。"
+        },
+        {
+          "id": "straight_arm_pulldown",
+          "nameJa": "ストレートアームプルダウン",
+          "nameEn": "Straight Arm Pulldown",
+          "difficulty": "beginner",
+          "equipment": ["ケーブルマシン"],
+          "description": "広背筋のアイソレーション種目。収縮を感じやすい。"
+        }
+      ]
+    },
+    {
+      "id": "traps",
+      "nameJa": "僧帽筋",
+      "nameEn": "Trapezius",
+      "description": "首から肩・背中上部に広がる筋肉。肩甲骨の動きに関わる。",
+      "exercises": [
+        {
+          "id": "shrug",
+          "nameJa": "バーベルシュラッグ",
+          "nameEn": "Barbell Shrug",
+          "difficulty": "beginner",
+          "equipment": ["バーベル"],
+          "description": "僧帽筋上部を直接鍛えるアイソレーション種目。"
+        },
+        {
+          "id": "face_pull",
+          "nameJa": "フェイスプル",
+          "nameEn": "Face Pull",
+          "difficulty": "beginner",
+          "equipment": ["ケーブルマシン", "ロープアタッチメント"],
+          "description": "僧帽筋中部と後部三角筋を鍛えるリハビリにも有効な種目。"
+        },
+        {
+          "id": "upright_row",
+          "nameJa": "アップライトロウ",
+          "nameEn": "Upright Row",
+          "difficulty": "intermediate",
+          "equipment": ["バーベル"],
+          "description": "僧帽筋と三角筋を同時に鍛えるコンパウンド種目。"
+        }
+      ]
+    },
+    {
+      "id": "shoulders",
+      "nameJa": "肩",
+      "nameEn": "Shoulders",
+      "description": "三角筋（前部・中部・後部）からなる肩の筋肉。肩幅を作る。",
+      "exercises": [
+        {
+          "id": "ohp",
+          "nameJa": "オーバーヘッドプレス",
+          "nameEn": "Overhead Press",
+          "difficulty": "intermediate",
+          "equipment": ["バーベル"],
+          "description": "肩全体を鍛えるコンパウンド種目。三角筋前部・中部に効果的。"
+        },
+        {
+          "id": "lateral_raise",
+          "nameJa": "サイドレイズ",
+          "nameEn": "Lateral Raise",
+          "difficulty": "beginner",
+          "equipment": ["ダンベル"],
+          "description": "三角筋中部を集中して鍛えるアイソレーション種目。肩幅が広がる。"
+        },
+        {
+          "id": "front_raise",
+          "nameJa": "フロントレイズ",
+          "nameEn": "Front Raise",
+          "difficulty": "beginner",
+          "equipment": ["ダンベル"],
+          "description": "三角筋前部を鍛えるアイソレーション種目。"
+        },
+        {
+          "id": "reverse_fly",
+          "nameJa": "リアレイズ",
+          "nameEn": "Rear Delt Fly",
+          "difficulty": "beginner",
+          "equipment": ["ダンベル"],
+          "description": "三角筋後部を鍛える。姿勢改善にも効果的。"
+        }
+      ]
+    },
+    {
+      "id": "biceps",
+      "nameJa": "上腕二頭筋",
+      "nameEn": "Biceps",
+      "description": "いわゆる「力こぶ」。肘を曲げる動作で使われる。",
+      "exercises": [
+        {
+          "id": "barbell_curl",
+          "nameJa": "バーベルカール",
+          "nameEn": "Barbell Curl",
+          "difficulty": "beginner",
+          "equipment": ["バーベル"],
+          "description": "上腕二頭筋の基本種目。高重量を扱いやすい。"
+        },
+        {
+          "id": "dumbbell_curl",
+          "nameJa": "ダンベルカール",
+          "nameEn": "Dumbbell Curl",
+          "difficulty": "beginner",
+          "equipment": ["ダンベル"],
+          "description": "片腕ずつ鍛えられるため左右差を修正しやすい。"
+        },
+        {
+          "id": "hammer_curl",
+          "nameJa": "ハンマーカール",
+          "nameEn": "Hammer Curl",
+          "difficulty": "beginner",
+          "equipment": ["ダンベル"],
+          "description": "上腕筋・腕橈骨筋も同時に鍛えられる種目。"
+        },
+        {
+          "id": "preacher_curl",
+          "nameJa": "プリーチャーカール",
+          "nameEn": "Preacher Curl",
+          "difficulty": "intermediate",
+          "equipment": ["バーベル", "プリーチャーカールベンチ"],
+          "description": "チーティングを防いで上腕二頭筋を集中的に鍛える。"
+        }
+      ]
+    },
+    {
+      "id": "triceps",
+      "nameJa": "上腕三頭筋",
+      "nameEn": "Triceps",
+      "description": "上腕の後ろ側の筋肉。押す動作・肘を伸ばす動作で使われる。腕の約2/3を占める。",
+      "exercises": [
+        {
+          "id": "tricep_pushdown",
+          "nameJa": "トライセップスプッシュダウン",
+          "nameEn": "Tricep Pushdown",
+          "difficulty": "beginner",
+          "equipment": ["ケーブルマシン"],
+          "description": "上腕三頭筋の基本種目。フォームを習得しやすい。"
+        },
+        {
+          "id": "skull_crusher",
+          "nameJa": "スカルクラッシャー",
+          "nameEn": "Skull Crusher",
+          "difficulty": "intermediate",
+          "equipment": ["バーベル", "ベンチ"],
+          "description": "上腕三頭筋長頭を集中して鍛えるアイソレーション種目。"
+        },
+        {
+          "id": "close_grip_bench",
+          "nameJa": "クローズグリップベンチプレス",
+          "nameEn": "Close Grip Bench Press",
+          "difficulty": "intermediate",
+          "equipment": ["バーベル", "ベンチ"],
+          "description": "高重量で上腕三頭筋を鍛えられるコンパウンド種目。"
+        },
+        {
+          "id": "dips_tricep",
+          "nameJa": "ディップス（三頭筋）",
+          "nameEn": "Dips (Tricep Focus)",
+          "difficulty": "intermediate",
+          "equipment": ["ディップスバー"],
+          "description": "体を垂直に保って行い、上腕三頭筋を重点的に鍛える。"
+        }
+      ]
+    },
+    {
+      "id": "abs",
+      "nameJa": "腹筋",
+      "nameEn": "Abs",
+      "description": "腹直筋・腹斜筋からなるコア筋群。体幹の安定性に重要。",
+      "exercises": [
+        {
+          "id": "crunch",
+          "nameJa": "クランチ",
+          "nameEn": "Crunch",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "腹直筋の基本種目。上腹部に効果的。"
+        },
+        {
+          "id": "plank",
+          "nameJa": "プランク",
+          "nameEn": "Plank",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "体幹全体を鍛えるアイソメトリック種目。"
+        },
+        {
+          "id": "leg_raise",
+          "nameJa": "レッグレイズ",
+          "nameEn": "Leg Raise",
+          "difficulty": "intermediate",
+          "equipment": [],
+          "description": "下腹部を集中して鍛えられる種目。"
+        },
+        {
+          "id": "cable_crunch",
+          "nameJa": "ケーブルクランチ",
+          "nameEn": "Cable Crunch",
+          "difficulty": "intermediate",
+          "equipment": ["ケーブルマシン"],
+          "description": "負荷を調整しながら腹直筋を鍛えられる種目。"
+        },
+        {
+          "id": "russian_twist",
+          "nameJa": "ロシアンツイスト",
+          "nameEn": "Russian Twist",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "腹斜筋を重点的に鍛えるローテーション種目。"
+        }
+      ]
+    },
+    {
+      "id": "quads",
+      "nameJa": "大腿四頭筋",
+      "nameEn": "Quadriceps",
+      "description": "太もも前面の筋肉群。膝を伸ばす動作・立ち上がる動作で使われる。",
+      "exercises": [
+        {
+          "id": "squat",
+          "nameJa": "スクワット",
+          "nameEn": "Squat",
+          "difficulty": "intermediate",
+          "equipment": ["バーベル"],
+          "description": "下半身のキング種目。大腿四頭筋・臀部・ハムストリングを鍛える。"
+        },
+        {
+          "id": "leg_press",
+          "nameJa": "レッグプレス",
+          "nameEn": "Leg Press",
+          "difficulty": "beginner",
+          "equipment": ["レッグプレスマシン"],
+          "description": "大腿四頭筋を安全に高重量で鍛えられるマシン種目。"
+        },
+        {
+          "id": "lunge",
+          "nameJa": "ランジ",
+          "nameEn": "Lunge",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "片足ずつ鍛えるため左右差の修正にも効果的。"
+        },
+        {
+          "id": "leg_extension",
+          "nameJa": "レッグエクステンション",
+          "nameEn": "Leg Extension",
+          "difficulty": "beginner",
+          "equipment": ["レッグエクステンションマシン"],
+          "description": "大腿四頭筋のアイソレーション種目。膝の仕上げに使う。"
+        }
+      ]
+    },
+    {
+      "id": "hamstrings",
+      "nameJa": "ハムストリング",
+      "nameEn": "Hamstrings",
+      "description": "太もも後面の筋肉群。膝を曲げる動作・股関節を伸ばす動作で使われる。",
+      "exercises": [
+        {
+          "id": "romanian_deadlift",
+          "nameJa": "ルーマニアンデッドリフト",
+          "nameEn": "Romanian Deadlift",
+          "difficulty": "intermediate",
+          "equipment": ["バーベル"],
+          "description": "ハムストリングを最大限に伸展させて鍛えるコンパウンド種目。"
+        },
+        {
+          "id": "leg_curl",
+          "nameJa": "レッグカール",
+          "nameEn": "Leg Curl",
+          "difficulty": "beginner",
+          "equipment": ["レッグカールマシン"],
+          "description": "ハムストリングのアイソレーション種目。"
+        },
+        {
+          "id": "good_morning",
+          "nameJa": "グッドモーニング",
+          "nameEn": "Good Morning",
+          "difficulty": "intermediate",
+          "equipment": ["バーベル"],
+          "description": "ハムストリングと脊柱起立筋を同時に鍛える種目。"
+        }
+      ]
+    },
+    {
+      "id": "glutes",
+      "nameJa": "臀部",
+      "nameEn": "Glutes",
+      "description": "大臀筋・中臀筋からなる体の中で最も大きな筋肉群。",
+      "exercises": [
+        {
+          "id": "hip_thrust",
+          "nameJa": "ヒップスラスト",
+          "nameEn": "Hip Thrust",
+          "difficulty": "intermediate",
+          "equipment": ["バーベル", "ベンチ"],
+          "description": "大臀筋を最も直接的に鍛える種目。"
+        },
+        {
+          "id": "glute_bridge",
+          "nameJa": "グルートブリッジ",
+          "nameEn": "Glute Bridge",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "ヒップスラストの入門種目。自重でもしっかり鍛えられる。"
+        },
+        {
+          "id": "bulgarian_split_squat",
+          "nameJa": "ブルガリアンスプリットスクワット",
+          "nameEn": "Bulgarian Split Squat",
+          "difficulty": "intermediate",
+          "equipment": ["ダンベル", "ベンチ"],
+          "description": "片足で行うスクワット。臀部と大腿四頭筋に強烈な刺激。"
+        }
+      ]
+    },
+    {
+      "id": "calves",
+      "nameJa": "ふくらはぎ",
+      "nameEn": "Calves",
+      "description": "腓腹筋・ヒラメ筋からなるふくらはぎの筋肉群。つま先立ちの動作で使われる。",
+      "exercises": [
+        {
+          "id": "standing_calf_raise",
+          "nameJa": "スタンディングカーフレイズ",
+          "nameEn": "Standing Calf Raise",
+          "difficulty": "beginner",
+          "equipment": [],
+          "description": "腓腹筋を鍛えるふくらはぎの基本種目。"
+        },
+        {
+          "id": "seated_calf_raise",
+          "nameJa": "シーテッドカーフレイズ",
+          "nameEn": "Seated Calf Raise",
+          "difficulty": "beginner",
+          "equipment": ["シーテッドカーフレイズマシン"],
+          "description": "ヒラメ筋を重点的に鍛える種目。"
+        }
+      ]
+    }
+  ]
+}
